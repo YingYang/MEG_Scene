@@ -1,0 +1,14 @@
+# ica objects obtained on 20160221-20160227, raw data 1-110Hz
+# Subj10
+Run	EOG		ECG
+1	[80] 		[295  32]
+2	[297]		[ 56  97]	#297 topo is good
+3	[ 88 247] 	[190 276]	#88 topo is good, EOG signal is weak, seems correlated with  147 too,  15 is not blinks 
+4 	[63] 		[222 288]	#63 topo is good, EOG signal is weak, only 63 seems to be real blinks
+5 	[2] 		[168  21]	#2 topo is good, 86 57 do not look like blinks
+6	[214] 		[ 47  99]	#214 topo is good
+7 	[111] 		[221 272]	#111 topo is good
+8 	[21] 		[ 71 140]	#21 topo is good
+9	[8] 		[244  10]	#8 topo is good
+10	[81] 		[142 214  25]   #81 topo is good
+

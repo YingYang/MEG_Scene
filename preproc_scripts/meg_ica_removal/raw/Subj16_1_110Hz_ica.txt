@@ -1,0 +1,18 @@
+# ica objects obtained on 20160628, raw data 1-110Hz
+# pca = 1-5E-4, MaxIter = 1000
+# Subj16
+# IOG IC topo map is verified
+Run	EOG	ECG
+1	[0] 	[ 24 228] 
+2	[215] 	[125]	  	
+3	[79] 	[243  69] 
+4	[104] 	[87 83]
+5	[63] 	[160 243]
+6	[198] 	[23 52]
+7	[84] 	[215]
+8	[111] 	[196]
+9	[9] 	[137]
+10	[]	[230  46]  185 is not the regular blinks, but more like sacade
+11	[197] 	[ 23 121]  topo map fir 61 is a bit off, but still okay
+12	[61] 	[207 206]  topo map for 61 is a bit off, but still okay
+

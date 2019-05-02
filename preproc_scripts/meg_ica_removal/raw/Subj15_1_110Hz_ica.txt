@@ -1,0 +1,15 @@
+# ica objects obtained on 20160530, raw data 1-50Hz
+# Subj14
+# data was too noisy, ICA could not converge well, try compute the ICA at 1-50Hz_filtered version
+Run	EOG	ECG
+1	[79]  [ 73  88 143]   # EOG topo good
+2	[240] [234 250 123]   # EOG topo good
+3	[274]  [238  47]  # 274 was not obviously EOG, but no other ones can be identified. topo plot was noisy but not terrible. 
+4	[] []               # too noisy, nothing could be identified. 
+5	[142] [260 279 176 255]   # EOG topo good	
+6	[][ 87 119]		  # the automatically detected EOG were not good
+7	[163] [183 282]	    # EOG topo good
+8	[][]		    # no ECG automatically detected, automatically detected EOG was not good either, ICs were too noisy
+9	[223] [ 91  42 161  39] # automatically detected EOG were not good, 223 had a noisy but roughly reasonable topo map
+10	[] [] # too noisy nothing was detected
+

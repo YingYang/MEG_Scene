@@ -1,0 +1,14 @@
+# ica objects obtained on 20160221-20160227, raw data 1-110Hz
+# Subj5
+Run	EOG		ECG
+1	[137]		[175 275 291]
+2	[188] 		[ 71 237  51]
+3	[135] 		[165  73]
+4	[165] 		[195 220 281]
+5	[223] 		[ 16  64 151]  #226 is a bit correlated with EOG too, but not too much, topomap is not perfect
+6	[  6] 		[ 78 204  30]
+7	[231] 		[ 29 139  52]
+8	[171] 		[254 271  40]
+9	[247]		[ 90 223 122]		#ECG no signal, manually identified
+10	[ 74] 		[ 32 107 184]
+

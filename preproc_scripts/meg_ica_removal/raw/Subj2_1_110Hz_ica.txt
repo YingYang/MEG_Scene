@@ -1,0 +1,15 @@
+# ica objects obtained on 20160221-20160226, raw data 1-110Hz
+# Subj2
+Run	EOG		ECG
+1	[ 80 146] 	[103 179]
+2	[294] 		[ 37 153] #278, 11 also look like EOG, but with small emplitude.  Topo for 278 is not too bad nor good. This Subj has few blinks, so leave them in.  
+3	[128] 		[78 72]
+4	[273] 		[245 140]
+5	[231] 		[163 199]
+6	[257] 		[218  95]
+7	[119] 		[107 193]
+8	[259] 		[287 239]
+9	[  9 131]	[279 100] 
+10	[123  79] 	[27 11]
+11	[261] 		[269 116]
+12	[214] 		[94 32]
