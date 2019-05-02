@@ -27,7 +27,7 @@ def ols_regression(data0, X, stats_model_flag = False):
         # the results by two methods agree
         for i in range(m):
             if np.mod(i,1000) == 0:
-                print "%f completed" % np.float(i)/np.float(m)*100
+                print ("%f completed" % np.float(i)/np.float(m)*100)
             for j in range(n_times):
                 y = data[:,i,j]
                 result = sm.OLS(y, X).fit()
@@ -41,7 +41,7 @@ def ols_regression(data0, X, stats_model_flag = False):
         
         for i in range(m):
             if np.mod(i,1000) == 0:
-                print "%f completed" % (np.float(i)/np.float(m)*100)
+                print ("%f completed" % (np.float(i)/np.float(m)*100))
             for j in range(n_times):
                 y = data[:,i,j]
                 beta = np.dot(inv_op, y)

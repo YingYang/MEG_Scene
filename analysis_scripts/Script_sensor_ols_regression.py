@@ -21,21 +21,19 @@ import matplotlib.cm as cmx
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 import sys
-path0 = "/media/yy/LinuxData/yy_dropbox/Dropbox/Scene_MEG_EEG/analysis_scripts/"
-sys.path.insert(0, path0)
-#path1 = "/home/ying/Dropbox/Scene_MEG_EEG/analysis_scripts/Util/"
-path1 = "/media/yy/LinuxData/yy_dropbox/Dropbox/Scene_MEG_EEG/analysis_scripts/Util/"
-sys.path.insert(0, path1)
-#path0 = "/home/ying/Dropbox/MEG_source_loc_proj/Face_Learning_Data_Ana/Utility/"
-path0 = "/media/yy/LinuxData/yy_dropbox/Dropbox/MEG_source_loc_proj/Face_Learning_Data_Ana/Utility/"
-sys.path.insert(0, path0)
+## specify the path of the code
+CODE_ROOT_DIR = "/Users/yingyang/Downloads/MEG_scene/analysis_scripts/"
+sys.path.insert(0, CODE_ROOT_DIR)
+sys.path.insert(0, CODE_ROOT_DIR+"/Util/")
 from ols_regression import ols_regression
 from Stat_Utility import bootstrap_mean_array_across_subjects
 
 
-data_root_dir0 = "/media/yy/LinuxData/yy_Scene_MEG_data/"
-data_root_dir =data_root_dir0 +"MEG_preprocessed_data/MEG_preprocessed_data/epoch_raw_data/"
-
+## specify the location of the data
+MEG_DATA_DIR = "/Users/yingyang/Downloads/Scene_MEG_data/"
+REGRESSOR_DIR = "/Users/yingyang/Downloads/essential_regressor/"
+MAT_OUT_DIR = "/Users/yingyang/Downloads/result/"
+    
 
 
 #=======================================================================================
@@ -64,51 +62,29 @@ def sensor_space_regression_no_regularization(subj, ave_mat_path, X,
 #=======================================================================================
 if __name__ == "__main__":
     
-    #meg_dir = "/home/ying/dropbox_unsync/MEG_scene_neil/MEG_EEG_DATA/MEG_DATA/DATA/epoch_raw_data/"
-    meg_dir = data_root_dir
-    eeg_dir = "/home/ying/dropbox_unsync/MEG_scene_neil/MEG_EEG_DATA/EEG_DATA/DATA/epoch_raw_data/"
     MEGorEEG = ['EEG','MEG']
     # try unsmoothed
     flag_swap_PPO10_POO10 = True
     MEG_fname_suffix = "1_110Hz_notch_ica_ave_alpha15.0_no_aspect"
-    EEG_fname_suffix = "1_110Hz_notch_ica_PPO10POO10_swapped_ave_alpha15.0_no_aspect" \
-        if flag_swap_PPO10_POO10 else "1_110Hz_notch_ica_ave_alpha15.0_no_aspect"    
-    
     model_name = "AlexNet"
-    
-    '''
-    if True:
-        isMEG = 0
-        #Subj_list = ['SubjYY_100', 'SubjYY_200', 'SubjYY_500'] 
-        subj_list = ["Subj_additional_1_500", "Subj_additional_2_500", "Subj_additional_3_500"]
-        n_times = 109
-        n_channels = 128
-        
-    '''    
+       
     Flag_CCA = False
     
     #for isMEG in [0, 1]:
     for isMEG in [1]:
         fname_suffix = MEG_fname_suffix if isMEG else EEG_fname_suffix
         if isMEG:
-            #isMEG = 1
-            #Subj_list = range(1,10)
+
             Subj_list = range(1,19)
+            # debug
+            Subj_list = list(range(1,12)) + list(range(13, 19))
             n_times = 110
             n_channels = 306
-        else:
-            #isMEG = 0
-            Subj_list = [1,2,3,4,5,6,7,8,10,11,12,13,14,16,18]
-            n_times = 109
-            n_channels = 128
-            
+        
         n_Subj = len(Subj_list)
         n_im = 362
         
         
-        regressor_dir = "/media/yy/LinuxData/yy_Scene_MEG_data/regressor/"
-        mat_out_dir = "/media/yy/LinuxData/yy_Scene_MEG_data/Result_Mat/sensor_regression/ave_ols/"
-    
         offset = 0.04 if isMEG else 0
         
         if not Flag_CCA:
@@ -134,12 +110,13 @@ if __name__ == "__main__":
             for j in range(n_feat):  
                 # load the design matrix 
                 feat_name = feat_name_seq[j]
-                print feat_name
-                regressor_fname = regressor_dir +  "%s_PCA.mat" %(feat_name)
+                print(feat_name)
+                regressor_fname = REGRESSOR_DIR +  "%s_PCA.mat" %(feat_name)
                 tmp = scipy.io.loadmat(regressor_fname)
                 X0 = tmp['X'][0:n_im]
                 suffix = "%d_dim" % n_dim
-                print suffix, n_dim
+                print (suffix)
+                print (n_dim)
                 X = X0[:,0:n_dim]
                 X_list.append(X)
                 
@@ -165,43 +142,26 @@ if __name__ == "__main__":
                     scipy.io.savemat(mat_name, result_reg)  
              """
         else: 
-            sep_CCA = True
-            # CCA determined by the stimuli images
-#            if sep_CCA == False:
-#                n_comp = 15
-#                fname = "%s_conv1_%s_%d_%s_fc6_%s_%d_intersect_%d.mat" %(model_name, feature_suffix,n_comp,\
-#                               model_name, feature_suffix, n_comp, n_comp)
-#                regressor_mat = scipy.io.loadmat(regressor_dir + fname)
-#                sub_feat_seq = ['XresA','XresB','Xoverlap']
-#                feat_name_seq = sub_feat_seq
-#                n_feat = len(sub_feat_seq)
-#                
-#                X_list = list()
-#                for j in range(n_feat):
-#                    X_list.append(regressor_mat[sub_feat_seq[j]])
-            # CCA determined by additional training data, only the common 10 dimensions of the first component is regressed out
-            if sep_CCA == True:
-                n_comp1 = 6
-                n_comp = 6
-                #feat_name_seq = ['conv1','fc6']
-                feat_name_seq = ['conv1_nc160','fc7_nc160']
-                mode_id = 3
-                mode_names = ['','Layer1_6','localcontrast_Layer6', 'Layer1_7_noncontrast160']
+            
+            n_comp1 = 6
+            n_comp = 6
+            #feat_name_seq = ['conv1','fc6']
+            feat_name_seq = ['conv1_nc160','fc7_nc160']
+            mode_id = 3
+            mode_names = ['','Layer1_6','localcontrast_Layer6', 'Layer1_7_noncontrast160']
 
-                X_list = list()
-                for j in range(2):
-                    #tmp = scipy.io.loadmat(regressor_dir + "AlexNet_%s_cca_%d_residual_svd.mat" %(feat_name_seq[j], n_comp1))
-                    mat_name = regressor_dir+ "AlexNet_%s_%s_cca_%d_residual_svd.mat" %(mode_names[mode_id], feat_name_seq[j], n_comp1)
-                    tmp = scipy.io.loadmat(mat_name)
-                    X_list.append(tmp['u'][:,0:n_comp])
-                
-                X_list.append(tmp['merged_u'][:,0:n_comp])
-                feat_name_seq.append( "CCA_merged")
+            X_list = list()
+            for j in range(2):
+                #tmp = scipy.io.loadmat(regressor_dir + "AlexNet_%s_cca_%d_residual_svd.mat" %(feat_name_seq[j], n_comp1))
+                mat_name = REGRESSOR_DIR+ "AlexNet_%s_%s_cca_%d_residual_svd.mat" %(mode_names[mode_id], feat_name_seq[j], n_comp1)
+                tmp = scipy.io.loadmat(mat_name)
+                X_list.append(tmp['u'][:,0:n_comp])
+            
+            X_list.append(tmp['merged_u'][:,0:n_comp])
+            feat_name_seq.append( "CCA_merged")
 
             # add another set, the top n_compnent 
-            fname =  "/media/yy/LinuxData/yy_dropbox/Dropbox/" + \
-                "/Scene_MEG_EEG/Features/" + \
-                "Layer1_contrast/Stim_images_Layer1_contrast_noaspect.mat"
+            fname =  REGRESSOR_DIR + "Stim_images_Layer1_contrast_noaspect.mat"
             mat_dict = scipy.io.loadmat(fname)
             tmp = mat_dict['contrast_noaspect']
             tmp = tmp- np.mean(tmp, axis = 0)
@@ -222,9 +182,7 @@ if __name__ == "__main__":
                 subj = "Subj%d" %Subj_list[i]
                 #subj = Subj_list[i]
                 if isMEG:
-                    ave_mat_path = meg_dir + "%s/%s_%s.mat" %(subj,subj,fname_suffix)
-                else:
-                    ave_mat_path = eeg_dir + "%s_EEG/%s_EEG_%s.mat" %(subj,subj,fname_suffix)
+                    ave_mat_path = MEG_DATA_DIR + "%s_%s.mat" %(subj,fname_suffix)
                 result_reg = sensor_space_regression_no_regularization(subj, ave_mat_path, X)
                 log10p[i,j] = result_reg['log10p'][:,0:n_times]
                 Rsq[i,j] = result_reg['Rsq'][:,0:n_times]
@@ -235,11 +193,11 @@ if __name__ == "__main__":
          
         # save the results as mat
         if Flag_CCA:
-            mat_name = mat_out_dir + "AlexNet_%s_CCA%d_ncomp%d_ave_%s.mat" %(MEGorEEG[isMEG], sep_CCA, n_comp, fname_suffix)
+            mat_name = MAT_OUT_DIR + "AlexNet_%s_CCA%d_ncomp%d_ave_%s.mat" %(MEGorEEG[isMEG], sep_CCA, n_comp, fname_suffix)
         else:
-            mat_name = mat_out_dir + "AlexNet_%s_%s_ncomp%d_ave_%s.mat" %(MEGorEEG[isMEG], feature_suffix, n_comp, fname_suffix)
+            mat_name = MAT_OUT_DIR + "AlexNet_%s_%s_ncomp%d_ave_%s.mat" %(MEGorEEG[isMEG], feature_suffix, n_comp, fname_suffix)
         
-        print mat_name
+        print(mat_name)
         mat_dict = dict(Rsq = Rsq, times = times, log10p = log10p, Subj_list = Subj_list,
                         isMEG = isMEG, X_list = X_list, n_comp = n_comp, 
                         feat_name_seq = feat_name_seq, n_feat = n_feat,
