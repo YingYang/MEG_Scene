@@ -1,0 +1,15 @@
+# ica objects obtained on 201605289-20160529, raw data 1-110Hz
+# Subj13
+Run	EOG	ECG
+1	[141]	[122 174]  # EOG: ICA topo looked good
+2	[58] 	[228 101]  # EOG: ICA topo looked good
+3	[254] 	[ 40 258]  # EOG: ICA topo looked good
+4	[60] 	[166  25]  # EOG: ICA topo looked good
+5	[183] 	[279  14]  # EOG: ICA topo looked good
+6	[168] 	[ 93 101]  # EOG: ICA topo looked good
+7	[240] 	[147 290]  # EOG: ICA topo looked good
+8	[150] 	[281 102]  # EOG: ICA topo looked good
+9	[151]   [ 44 267]  # EOG: ICA topo looked good
+10	[66] 	[130  49]  # EOG: ICA topo looked good
+11	[199] 	[175 274]  # EOG: ICA topo looked good
+12	[178] 	[161  58]  # EOG: ICA topo looked good

@@ -1,0 +1,16 @@
+# ica objects obtained in Sept05, 2015, on raw (not tsssed) data
+# Subj7
+# For EOG, only one component is reasonable
+Run	EOG		ECG
+1	[80]		[123,88,58]
+2	[238]		[139,177,99]
+3	[221]		[155,1,230]
+4	[153]		[158,117,178]
+5	[156]		[69,63]		#85 time course not like ECG
+6	[94]		[119,81,73]
+7	[103]		[191,116]	#73,109 not like ECG
+8	[184]		[191,8]		#94 not like ECG
+9	[27]		[64,52]		#68 not like ECG
+10	[100]		[147,48]	#26 not like ECG
+11	[212]		[44,221]
+12	[188]		[225,113]	#8,171 not like ECG

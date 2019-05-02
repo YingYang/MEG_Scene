@@ -1,0 +1,18 @@
+# ica objects obtained in Sept 5, 2015, on raw (not tsssed) data
+# Subj6
+# ECG components are reasonable, there are many EOG components. 
+# This might be due to the eye makeup of the subject
+# Only pick the EOG components that are correlated with EOG1. 
+Run	EOG				ECG
+1	[39,209,176,116,142,69,151,7]	[156,133]   		
+2	[91,90,45,70,59,92,224]		[98,61,1] 	
+3	[153,51,99,114,205,2,204]	[211,58]  
+4	[89,74,182,22,202,61,207,40]	[50,66]  
+5	[74,68,95,19,86,43]		[154,204,176]
+6	[3,66,214,201,188,192,109,158]	[79,153]
+7	[65,181,139,38,106,149,46]	[89,170,18] 
+8	[72,161,144,219,23]		[40,102]  # 146 is not very correlated
+
+
+
+

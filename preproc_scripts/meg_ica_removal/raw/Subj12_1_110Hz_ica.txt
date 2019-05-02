@@ -1,0 +1,15 @@
+# ica objects obtained on 20160221-20160227, raw data 1-110Hz
+# Subj12
+Run	EOG   ECG
+1	[169 54] [201] #54 correlates with EOG2, topo okay
+2	[228 80] [14]  #80 correlates with EOG2, topo good
+3	[137] [132] 
+4	[258] [185] #63, topo okay, but small amplitude
+5	[258] [231]	
+6	[286] [172]	
+7	[96] [237]  #169?
+8	[219] [238]
+9	[103 259] [37]  #259 correlates with EOG2, topo good
+10	[ 40 274] [287] #274 correlates with EOG2, topo good
+11	[67] [96]
+12	[192] [179]

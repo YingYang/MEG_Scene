@@ -1,0 +1,15 @@
+# ica objects obtained in December, 2015, on raw (not tsssed) data
+# Subj13
+Run	EOG		ECG
+1	[2]		[163, 225, 143]  # 126 was detected, but it had very small scale, it did not seem to have the ECG spikes
+2	[80]		[167, 184, 185]
+3	[50]		[88, 207, 69]  
+4	[7]		[73, 220, 198] 
+5	[149]		[92, 159, 142]
+6	[67]		[85, 32, 148]
+7	[138]		[232, 84, 69] 
+8	[123]		[178, 128, 138]
+9	[17]		[124, 65, 76]  
+10	[14]		[224, 161, 63]
+11	[105]		[201, 115, 161]
+12	[59]		[24, 80, 218]

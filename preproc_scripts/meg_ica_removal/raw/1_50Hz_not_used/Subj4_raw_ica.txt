@@ -1,0 +1,17 @@
+# ica objects obtained in Sept 5, 2015, on raw (not tsssed) data
+# Subj4
+# only the first EOG component is reasonable, ECG components are reasonable
+Run	EOG		ECG
+1	[64]		[112,18,11]   		# The ICA components on 20150905
+2	[120]		[5,146,38] 	# 94 is flat, the time course is irrelevant. 
+3	[39]		[207,85,60]  
+4	[97]		[124,155,173]   # 97 is the actual blink, 131 is not.
+5	[77]		[167,219,142]
+6	[182]		[51,198,211]
+7	[198]		[175,16,147]
+8	[96]		[67,6,228]
+9	[169]		[2,140,111]	# 91 flat
+10	[21]		[75,80,11]
+11	[200]		[121,78,217]	#195  flat
+12	[213]		[166,187,126]
+

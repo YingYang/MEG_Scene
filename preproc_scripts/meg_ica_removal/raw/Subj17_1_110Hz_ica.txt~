@@ -1,0 +1,17 @@
+# ica objects obtained on 20160628, raw data 1-110Hz
+# Subj17
+# EOG topo good
+Run	EOG	ECG
+1	[137] 	[166  72]
+2	[ 39 149] [ 70 151] # 149 also has correlation with blinks
+3	[0] [130 166]  # 0's topo map is not perfect, and it is also not perfectly correlated with blinks, but no other IC found
+4	[114 276] [209 42]
+5	[110 195] [230 254]
+6	[4 36 152][113 177] all 3 EOG IC had good topo maps
+7	[42 189] [107 129]  # 47's topo map is not correct, 189 was found manually
+8	[ 24 268] [76 26]
+9	[145 261] [206  81]
+10	[176] [55 50]     #176 did not have a perfect topo map, but no other EOG IC found manually
+11	[176 236] [12]
+12	
+

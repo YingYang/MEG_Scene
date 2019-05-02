@@ -1,0 +1,17 @@
+# ICAs are computed onDec 13 2015, there was one warning about not converging
+		EOG		ECG		
+Subj1		[31]		[104 49]    	
+Subj2		[107]		[83]		
+Subj3		[112]		[77 22 14 101]
+Subj4		[85]		[90 95 124]        # no automatic ecg detected
+Subj5		[26]		[97 11]   # EOG automatically identified are all wrong.  manually label 107
+Subj6		[85]		[90]      # no automatic ECG, manually labeled 90
+Subj7		[85]		[101 60]
+Subj8		[15 3]		[8 75 26] 
+Subj9
+Subj10		[17, 123]	[41]	 # no automatic eog, ecg, manually label 
+Subj11		[57]		[122]
+Subj12		[37 40 10]	[]     # no automatic eog nor ecg. Many ICs are correlated with EOG, this seemed to be the one that did not converge, but when I tried to rerun the code, I did not see the warning. 
+Subj13		[37]		[42]
+
+

@@ -1,0 +1,17 @@
+# ica objects obtained in December, 2015, on raw (not tsssed) data
+# Subj10
+#  The EOG has very small signal, and comtaminations
+#  All selected eog ICs have a reasonable channel layout eg. run10 129
+#  Another component with layout like run10 44 was often marked as the highest score, it correlates with the weird EOG signals, which are not blinks at all. It is not included
+
+Run	EOG		ECG
+1	[168]		[194 43 16] 
+2	[78]		[61 200]
+3	[1]		[142 20 170]  
+4	[199]		[61 160 45] 
+5	[88]		[8 154]
+6	[210]		[144 231]
+7	[108]		[93 26] 
+8	[44]		[158 55]
+9	[4]		[173 45]  
+10	[129]		[121 18 103]

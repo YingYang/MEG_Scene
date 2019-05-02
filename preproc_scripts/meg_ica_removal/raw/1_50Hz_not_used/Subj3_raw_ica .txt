@@ -1,0 +1,11 @@
+# ica objects obtained in Sept 5, 2015, on raw (not tsssed) data
+# Subj3
+# only the first EOG component is reasonable, ECG components are reasonable
+Run	EOG		ECG
+1	[239]		[123,186,27]
+2	[130]		[115,239]
+3	[246]		[153,230]  # 184 was crazy, not blinks, but I have no other reason to remove it
+4	[164]		[79,14]
+5	[0]		[216,85]
+6	[153]		[115,86]
+

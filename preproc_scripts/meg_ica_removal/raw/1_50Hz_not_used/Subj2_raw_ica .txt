@@ -1,0 +1,17 @@
+# ica objects obtained in Sept 5,2015, on raw (not tsssed) data
+# Subj2
+# Automatically detected ECGs are all good
+# EOGs, take the first one or two
+Run	EOG		ECG
+1	[243,201]	[219,90]
+2	[174]		[218,55]
+3	[91]		[120,169]
+4	[57]		[126,237]    # EOG 24 was too flat, correlation was -0.4, not too high
+5	[59]		[96,18]
+6	[75]		[133,192]
+7	[6]		[186,236]    # although 238 has high correlation, the time course seems not relevant
+8	[46]		[0,149]
+9	[87]		[27,199]
+10	[0,185]		[124,102,134]  # 185 seems more like blinks
+11	[237]		[34,177]
+12	[120]		[49,220]

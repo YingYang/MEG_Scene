@@ -1,0 +1,16 @@
+# ica objects obtained in Sept 05, 2015, on raw (not tsssed) data
+# Subj8
+# Automatically detected ECGs are all good
+# Run3  EOG had wild slow drifting, MNE could not identify the correct one
+# for Run10: ]   # the first attempt to do ICA used 10 as steps, but fast ICA did not converge. 
+Run	EOG		ECG
+1	[44]		[159,146,53]
+2	[136]		[205,72,57]
+3	[230,20]	[88,48,4]  
+4	[209,74]	[34,61] 
+5	[2]		[142,99]
+6	[191]		[155,208]
+7	[79,149]	[105,224,223]
+8	[210]		[160,135]
+9	[33]		[24,211,158]
+10	[12]		[34,124]

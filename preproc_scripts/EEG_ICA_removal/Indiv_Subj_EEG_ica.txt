@@ -1,0 +1,26 @@
+# ICAs are computed on 20160221-20160222
+# Subj16,18, ICA computed on 20160628
+# EOG channel EOG_IO2
+Subj id	EOG		ECG			EMG	
+1	[23]		[98 111]		[]
+2	[59]		[85]			[]
+3	[87]		[119  95  59  74] 	[]
+4	[92] 		[118   0] 		[]
+5	[53]		[118 114]		[]	# EOG_IO2 did not have good signals, [53] was manually identified
+6	[66]		[]			[]	# no ECG was detected by MNE-python, the plotted ones are the 10 ICs with highest scores
+7	[45] 		[73 41 42] 		[]
+8	[79]		[102 86 49]		[]
+10	[2]		[3]			[]	# EOG_IO2 did not have good signals, [2] manually identified (it has good topo map), no ECG automatically dientified, manually pick [3]
+11	[84 1]		[49]			[]
+12	[45 87 85]	[]			[]	# no ECG was detected by MNE-python,  126 looks synced with EOG, but may be evoked response
+13	[78 124]	[19 54]			[]
+14	[83]		[102]			[]	# EOG 83 is manually identified. It sees that EOG recordings were corrupted
+16	[28]		[99]			[]      # topo is good for EOG 28
+18	[ 4 64] 	[87] 			[]	# ICA did not converge, so the ICs were spiky and fuzzy, but at least the correlation score for both ECG and EOG are high
+
+
+
+# Extra subjects with 500 ms stimulus presentation
+1	[102  26  34]	[]			[]
+2	[83]		[]			[]	
+3	[90 64]		[]			[]

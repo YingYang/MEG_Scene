@@ -1,0 +1,17 @@
+# ica objects obtained in Sept 5, 2015, on raw (not tsssed) data
+# Subj5
+# only the first EOG component is reasonable, ECG components are reasonable
+Run	EOG		ECG
+1	[223]		[45,12,161,131]   		
+2	[76]		[67,176,107,149] 	
+3	[190]		[184,60,1]  
+4	[125]		[114,213,154]  
+5	[96]		[117,27,92]
+6	[141]		[173,22,236]
+7	[155]		[87,69,57]  # 82 is not very correlated with ECG, do not include it. 
+8	[187]		[129,32,119,87]
+9	[236]		[51,116,190]   # ECG was off for this run, manually detect ECGs, 0~50: None; 50~100: 51; 100~150: 116; 150~200: 190; 200:243, None
+10	[76]		[71,56,223]
+
+
+

@@ -1,0 +1,1203 @@
+Subj1 run1
+306
+200
+epoch length
+199
+Subj1 run2
+306
+200
+epoch length
+199
+Subj1 run3
+306
+200
+epoch length
+199
+Subj1 run4
+306
+200
+epoch length
+199
+Subj1 run5
+306
+200
+epoch length
+199
+Subj1 run6
+306
+200
+epoch length
+199
+Subj2 run1
+306
+199
+epoch length
+199
+Subj2 run2
+306
+200
+epoch length
+199
+Subj2 run3
+306
+200
+epoch length
+199
+Subj2 run4
+306
+200
+epoch length
+199
+Subj2 run5
+306
+200
+epoch length
+199
+Subj2 run6
+306
+200
+epoch length
+199
+Subj2 run7
+306
+200
+epoch length
+199
+Subj2 run8
+306
+200
+epoch length
+199
+Subj2 run9
+306
+200
+epoch length
+199
+Subj2 run10
+306
+200
+epoch length
+199
+Subj2 run11
+306
+200
+epoch length
+199
+Subj2 run12
+306
+200
+epoch length
+199
+Subj3 run1
+306
+199
+epoch length
+199
+Subj3 run2
+306
+199
+epoch length
+199
+Subj3 run3
+306
+199
+epoch length
+199
+Subj3 run4
+306
+199
+epoch length
+199
+Subj3 run5
+306
+199
+epoch length
+199
+Subj3 run6
+306
+199
+epoch length
+199
+Subj4 run1
+306
+200
+epoch length
+199
+Subj4 run2
+306
+200
+epoch length
+199
+Subj4 run3
+306
+199
+epoch length
+199
+Subj4 run4
+306
+199
+epoch length
+199
+Subj4 run5
+306
+199
+epoch length
+199
+Subj4 run6
+306
+199
+epoch length
+199
+Subj4 run7
+306
+199
+epoch length
+199
+Subj4 run8
+306
+199
+epoch length
+199
+Subj4 run9
+306
+199
+epoch length
+199
+Subj4 run10
+306
+199
+epoch length
+199
+Subj4 run11
+306
+199
+epoch length
+199
+Subj4 run12
+306
+199
+epoch length
+199
+Subj5 run1
+306
+199
+epoch length
+199
+Subj5 run2
+306
+199
+epoch length
+199
+Subj5 run3
+306
+199
+epoch length
+199
+Subj5 run4
+306
+199
+epoch length
+199
+Subj5 run5
+306
+199
+epoch length
+199
+Subj5 run6
+306
+199
+epoch length
+199
+Subj5 run7
+306
+199
+epoch length
+199
+Subj5 run8
+306
+199
+epoch length
+199
+Subj5 run9
+306
+199
+epoch length
+199
+Subj5 run10
+306
+199
+epoch length
+199
+Subj6 run1
+306
+199
+epoch length
+199
+Subj6 run2
+306
+199
+epoch length
+199
+Subj6 run3
+306
+199
+epoch length
+199
+Subj6 run4
+306
+199
+epoch length
+199
+Subj6 run5
+306
+199
+epoch length
+199
+Subj6 run6
+306
+199
+epoch length
+199
+Subj6 run7
+306
+199
+epoch length
+199
+Subj6 run8
+306
+199
+epoch length
+199
+Subj7 run1
+306
+199
+epoch length
+199
+Subj7 run2
+306
+199
+epoch length
+199
+Subj7 run3
+306
+199
+epoch length
+199
+Subj7 run4
+306
+199
+epoch length
+199
+Subj7 run5
+306
+199
+epoch length
+199
+Subj7 run6
+306
+199
+epoch length
+199
+Subj7 run7
+306
+199
+epoch length
+199
+Subj7 run8
+306
+199
+epoch length
+199
+Subj7 run9
+306
+199
+epoch length
+199
+Subj7 run10
+306
+199
+epoch length
+199
+Subj7 run11
+306
+199
+epoch length
+199
+Subj7 run12
+306
+199
+epoch length
+199
+Subj8 run1
+306
+199
+epoch length
+199
+Subj8 run2
+306
+199
+epoch length
+199
+Subj8 run3
+306
+199
+epoch length
+199
+Subj8 run4
+306
+199
+epoch length
+199
+Subj8 run5
+306
+199
+epoch length
+199
+Subj8 run6
+306
+199
+epoch length
+199
+Subj8 run7
+306
+199
+epoch length
+199
+Subj8 run8
+306
+199
+epoch length
+199
+Subj8 run9
+306
+199
+epoch length
+199
+Subj8 run10
+306
+199
+epoch length
+199
+Subj9 run1
+306
+199
+epoch length
+199
+Subj9 run2
+306
+199
+epoch length
+199
+Subj9 run3
+306
+199
+epoch length
+199
+Subj9 run4
+306
+169
+epoch length
+169
+Subj9 run5
+306
+199
+epoch length
+199
+Subj9 run6
+306
+199
+epoch length
+199
+Subj9 run7
+306
+199
+epoch length
+199
+Subj9 run8
+306
+199
+epoch length
+199
+Subj9 run9
+306
+199
+epoch length
+199
+Subj9 run10
+306
+199
+epoch length
+199
+Subj10 run1
+306
+199
+epoch length
+199
+Subj10 run2
+306
+199
+epoch length
+199
+Subj10 run3
+306
+199
+epoch length
+199
+Subj10 run4
+306
+199
+epoch length
+199
+Subj10 run5
+306
+199
+epoch length
+199
+Subj10 run6
+306
+199
+epoch length
+199
+Subj10 run7
+306
+199
+epoch length
+199
+Subj10 run8
+306
+199
+epoch length
+199
+Subj10 run9
+306
+199
+epoch length
+199
+Subj10 run10
+306
+199
+epoch length
+199
+Subj11 run1
+306
+199
+epoch length
+199
+Subj11 run2
+306
+199
+epoch length
+199
+Subj11 run3
+306
+199
+epoch length
+199
+Subj11 run4
+306
+199
+epoch length
+199
+Subj11 run5
+306
+199
+epoch length
+199
+Subj11 run6
+306
+199
+epoch length
+199
+Subj11 run7
+306
+199
+epoch length
+199
+Subj11 run8
+306
+199
+epoch length
+199
+Subj11 run9
+306
+199
+epoch length
+199
+Subj11 run10
+306
+199
+epoch length
+199
+Subj11 run11
+306
+199
+epoch length
+199
+Subj11 run12
+306
+199
+epoch length
+199
+Subj12 run1
+306
+199
+epoch length
+199
+Subj12 run2
+306
+199
+epoch length
+199
+Subj12 run3
+306
+199
+epoch length
+199
+Subj12 run4
+306
+199
+epoch length
+199
+Subj12 run5
+306
+199
+epoch length
+199
+Subj12 run6
+306
+199
+epoch length
+199
+Subj12 run7
+306
+199
+epoch length
+199
+Subj12 run8
+306
+199
+epoch length
+199
+Subj12 run9
+306
+199
+epoch length
+199
+Subj12 run10
+306
+199
+epoch length
+199
+Subj12 run11
+306
+199
+epoch length
+199
+Subj12 run12
+306
+199
+epoch length
+199
+Subj13 run1
+306
+199
+epoch length
+199
+Subj13 run2
+306
+199
+epoch length
+199
+Subj13 run3
+306
+199
+epoch length
+199
+Subj13 run4
+306
+199
+epoch length
+199
+Subj13 run5
+306
+199
+epoch length
+199
+Subj13 run6
+306
+199
+epoch length
+199
+Subj13 run7
+306
+199
+epoch length
+199
+Subj13 run8
+306
+199
+epoch length
+199
+Subj13 run9
+306
+199
+epoch length
+199
+Subj13 run10
+306
+199
+epoch length
+199
+Subj13 run11
+306
+199
+epoch length
+199
+Subj13 run12
+306
+199
+epoch length
+199
+filter_1_110Hz_notch_ica
+1_110Hz_notch_ica
+downsampling to 100 Hz
+0 Subj1 run1
+199
+# channels = 306
+downsampling to 100 Hz
+1 Subj1 run2
+199
+# channels = 306
+downsampling to 100 Hz
+2 Subj1 run3
+199
+# channels = 306
+downsampling to 100 Hz
+3 Subj1 run4
+199
+# channels = 306
+downsampling to 100 Hz
+4 Subj1 run5
+199
+# channels = 306
+downsampling to 100 Hz
+5 Subj1 run6
+199
+# channels = 306
+0.0
+downsampling to 100 Hz
+0 Subj2 run1
+199
+# channels = 306
+downsampling to 100 Hz
+1 Subj2 run2
+199
+# channels = 306
+downsampling to 100 Hz
+2 Subj2 run3
+199
+# channels = 306
+downsampling to 100 Hz
+3 Subj2 run4
+199
+# channels = 306
+downsampling to 100 Hz
+4 Subj2 run5
+199
+# channels = 306
+downsampling to 100 Hz
+5 Subj2 run6
+199
+# channels = 306
+downsampling to 100 Hz
+6 Subj2 run7
+199
+# channels = 306
+downsampling to 100 Hz
+7 Subj2 run8
+199
+# channels = 306
+downsampling to 100 Hz
+8 Subj2 run9
+199
+# channels = 306
+downsampling to 100 Hz
+9 Subj2 run10
+199
+# channels = 306
+downsampling to 100 Hz
+10 Subj2 run11
+199
+# channels = 306
+downsampling to 100 Hz
+11 Subj2 run12
+199
+# channels = 306
+0.0
+downsampling to 100 Hz
+0 Subj3 run1
+199
+# channels = 306
+downsampling to 100 Hz
+1 Subj3 run2
+199
+# channels = 306
+downsampling to 100 Hz
+2 Subj3 run3
+199
+# channels = 306
+downsampling to 100 Hz
+3 Subj3 run4
+199
+# channels = 306
+downsampling to 100 Hz
+4 Subj3 run5
+199
+# channels = 306
+downsampling to 100 Hz
+5 Subj3 run6
+199
+# channels = 306
+0.0
+downsampling to 100 Hz
+0 Subj4 run1
+199
+# channels = 306
+downsampling to 100 Hz
+1 Subj4 run2
+199
+# channels = 306
+downsampling to 100 Hz
+2 Subj4 run3
+199
+# channels = 306
+downsampling to 100 Hz
+3 Subj4 run4
+199
+# channels = 306
+downsampling to 100 Hz
+4 Subj4 run5
+199
+# channels = 306
+downsampling to 100 Hz
+5 Subj4 run6
+199
+# channels = 306
+downsampling to 100 Hz
+6 Subj4 run7
+199
+# channels = 306
+downsampling to 100 Hz
+7 Subj4 run8
+199
+# channels = 306
+downsampling to 100 Hz
+8 Subj4 run9
+199
+# channels = 306
+downsampling to 100 Hz
+9 Subj4 run10
+199
+# channels = 306
+downsampling to 100 Hz
+10 Subj4 run11
+199
+# channels = 306
+downsampling to 100 Hz
+11 Subj4 run12
+199
+# channels = 306
+0.0
+downsampling to 100 Hz
+0 Subj5 run1
+199
+# channels = 306
+downsampling to 100 Hz
+1 Subj5 run2
+199
+# channels = 306
+downsampling to 100 Hz
+2 Subj5 run3
+199
+# channels = 306
+downsampling to 100 Hz
+3 Subj5 run4
+199
+# channels = 306
+downsampling to 100 Hz
+4 Subj5 run5
+199
+# channels = 306
+downsampling to 100 Hz
+5 Subj5 run6
+199
+# channels = 306
+downsampling to 100 Hz
+6 Subj5 run7
+199
+# channels = 306
+downsampling to 100 Hz
+7 Subj5 run8
+199
+# channels = 306
+downsampling to 100 Hz
+8 Subj5 run9
+199
+# channels = 306
+downsampling to 100 Hz
+9 Subj5 run10
+199
+# channels = 306
+0.0
+downsampling to 100 Hz
+0 Subj6 run1
+199
+# channels = 306
+downsampling to 100 Hz
+1 Subj6 run2
+199
+# channels = 306
+downsampling to 100 Hz
+2 Subj6 run3
+199
+# channels = 306
+downsampling to 100 Hz
+3 Subj6 run4
+199
+# channels = 306
+downsampling to 100 Hz
+4 Subj6 run5
+199
+# channels = 306
+downsampling to 100 Hz
+5 Subj6 run6
+199
+# channels = 306
+downsampling to 100 Hz
+6 Subj6 run7
+199
+# channels = 306
+downsampling to 100 Hz
+7 Subj6 run8
+199
+# channels = 306
+0.0
+downsampling to 100 Hz
+0 Subj7 run1
+199
+# channels = 306
+downsampling to 100 Hz
+1 Subj7 run2
+199
+# channels = 306
+downsampling to 100 Hz
+2 Subj7 run3
+199
+# channels = 306
+downsampling to 100 Hz
+3 Subj7 run4
+199
+# channels = 306
+downsampling to 100 Hz
+4 Subj7 run5
+199
+# channels = 306
+downsampling to 100 Hz
+5 Subj7 run6
+199
+# channels = 306
+downsampling to 100 Hz
+6 Subj7 run7
+199
+# channels = 306
+downsampling to 100 Hz
+7 Subj7 run8
+199
+# channels = 306
+downsampling to 100 Hz
+8 Subj7 run9
+199
+# channels = 306
+downsampling to 100 Hz
+9 Subj7 run10
+199
+# channels = 306
+downsampling to 100 Hz
+10 Subj7 run11
+199
+# channels = 306
+downsampling to 100 Hz
+11 Subj7 run12
+199
+# channels = 306
+0.0
+downsampling to 100 Hz
+0 Subj8 run1
+199
+# channels = 306
+downsampling to 100 Hz
+1 Subj8 run2
+199
+# channels = 306
+downsampling to 100 Hz
+2 Subj8 run3
+199
+# channels = 306
+downsampling to 100 Hz
+3 Subj8 run4
+199
+# channels = 306
+downsampling to 100 Hz
+4 Subj8 run5
+199
+# channels = 306
+downsampling to 100 Hz
+5 Subj8 run6
+199
+# channels = 306
+downsampling to 100 Hz
+6 Subj8 run7
+199
+# channels = 306
+downsampling to 100 Hz
+7 Subj8 run8
+199
+# channels = 306
+downsampling to 100 Hz
+8 Subj8 run9
+199
+# channels = 306
+downsampling to 100 Hz
+9 Subj8 run10
+199
+# channels = 306
+0.0
+downsampling to 100 Hz
+0 Subj9 run1
+199
+# channels = 306
+downsampling to 100 Hz
+1 Subj9 run2
+199
+# channels = 306
+downsampling to 100 Hz
+2 Subj9 run3
+199
+# channels = 306
+downsampling to 100 Hz
+3 Subj9 run4
+169
+# channels = 306
+downsampling to 100 Hz
+4 Subj9 run5
+199
+# channels = 306
+downsampling to 100 Hz
+5 Subj9 run6
+199
+# channels = 306
+downsampling to 100 Hz
+6 Subj9 run7
+199
+# channels = 306
+downsampling to 100 Hz
+7 Subj9 run8
+199
+# channels = 306
+downsampling to 100 Hz
+8 Subj9 run9
+199
+# channels = 306
+downsampling to 100 Hz
+9 Subj9 run10
+199
+# channels = 306
+0.0
+downsampling to 100 Hz
+0 Subj10 run1
+199
+# channels = 306
+downsampling to 100 Hz
+1 Subj10 run2
+199
+# channels = 306
+downsampling to 100 Hz
+2 Subj10 run3
+199
+# channels = 306
+downsampling to 100 Hz
+3 Subj10 run4
+199
+# channels = 306
+downsampling to 100 Hz
+4 Subj10 run5
+199
+# channels = 306
+downsampling to 100 Hz
+5 Subj10 run6
+199
+# channels = 306
+downsampling to 100 Hz
+6 Subj10 run7
+199
+# channels = 306
+downsampling to 100 Hz
+7 Subj10 run8
+199
+# channels = 306
+downsampling to 100 Hz
+8 Subj10 run9
+199
+# channels = 306
+downsampling to 100 Hz
+9 Subj10 run10
+199
+# channels = 306
+0.0
+downsampling to 100 Hz
+0 Subj11 run1
+199
+# channels = 306
+downsampling to 100 Hz
+1 Subj11 run2
+199
+# channels = 306
+downsampling to 100 Hz
+2 Subj11 run3
+199
+# channels = 306
+downsampling to 100 Hz
+3 Subj11 run4
+199
+# channels = 306
+downsampling to 100 Hz
+4 Subj11 run5
+199
+# channels = 306
+downsampling to 100 Hz
+5 Subj11 run6
+199
+# channels = 306
+downsampling to 100 Hz
+6 Subj11 run7
+199
+# channels = 306
+downsampling to 100 Hz
+7 Subj11 run8
+199
+# channels = 306
+downsampling to 100 Hz
+8 Subj11 run9
+199
+# channels = 306
+downsampling to 100 Hz
+9 Subj11 run10
+199
+# channels = 306
+downsampling to 100 Hz
+10 Subj11 run11
+199
+# channels = 306
+downsampling to 100 Hz
+11 Subj11 run12
+199
+# channels = 306
+0.0
+downsampling to 100 Hz
+0 Subj12 run1
+199
+# channels = 306
+downsampling to 100 Hz
+1 Subj12 run2
+199
+# channels = 306
+downsampling to 100 Hz
+2 Subj12 run3
+199
+# channels = 306
+downsampling to 100 Hz
+3 Subj12 run4
+199
+# channels = 306
+downsampling to 100 Hz
+4 Subj12 run5
+199
+# channels = 306
+downsampling to 100 Hz
+5 Subj12 run6
+199
+# channels = 306
+downsampling to 100 Hz
+6 Subj12 run7
+199
+# channels = 306
+downsampling to 100 Hz
+7 Subj12 run8
+199
+# channels = 306
+downsampling to 100 Hz
+8 Subj12 run9
+199
+# channels = 306
+downsampling to 100 Hz
+9 Subj12 run10
+199
+# channels = 306
+downsampling to 100 Hz
+10 Subj12 run11
+199
+# channels = 306
+downsampling to 100 Hz
+11 Subj12 run12
+199
+# channels = 306
+0.0
+downsampling to 100 Hz
+0 Subj13 run1
+199
+# channels = 306
+downsampling to 100 Hz
+1 Subj13 run2
+199
+# channels = 306
+downsampling to 100 Hz
+2 Subj13 run3
+199
+# channels = 306
+downsampling to 100 Hz
+3 Subj13 run4
+199
+# channels = 306
+downsampling to 100 Hz
+4 Subj13 run5
+199
+# channels = 306
+downsampling to 100 Hz
+5 Subj13 run6
+199
+# channels = 306
+downsampling to 100 Hz
+6 Subj13 run7
+199
+# channels = 306
+downsampling to 100 Hz
+7 Subj13 run8
+199
+# channels = 306
+downsampling to 100 Hz
+8 Subj13 run9
+199
+# channels = 306
+downsampling to 100 Hz
+9 Subj13 run10
+199
+# channels = 306
+downsampling to 100 Hz
+10 Subj13 run11
+199
+# channels = 306
+downsampling to 100 Hz
+11 Subj13 run12
+199
+# channels = 306
+0.0

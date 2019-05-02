@@ -1,0 +1,15 @@
+# ica objects obtained on 20160221-20160227, raw data 1-110Hz
+# Subj7
+Run 	EOG	ECG
+1 	[56] 	[214 190]	#EOG1 has weak signal. Checked all ICs, 29 has some weird peaks, one peak every 2s, evoked response (topo seems occipital)? Only take the first two ECGs, for consistency across all runs
+2	[123] 	[ 22 230]
+3	[84] 	[139 295]
+4	[89] 	[231 121]
+5	[18] 	[119 298]
+6	[275] 	[128 113]
+7	[184] 	[132 233]
+8	[132] 	[229  83]
+9	[257] 	[159  28]
+10	[264] 	[139  97]	#IC88 was like IC29 in Run1, seems like occipital evoked response
+11	[92]	[194 203]
+12	[158]	[ 16   4]

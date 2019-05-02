@@ -1,0 +1,12 @@
+# ica objects obtained in Sept 5, 2015, on raw (not tsssed) data
+# Subj1
+# Automatically detected ECGs are all good (mostly 3 ICs)
+# EOGs, take the first one 
+Run	EOG		ECG
+1	[196]		[199,171,74]
+2	[182]		[121,8,153]
+3	[208]		[48,165,34]
+4	[171]		[133,211,36]
+5	[19]		[57,43,99]
+6	[82]		[212,39,24]
+
