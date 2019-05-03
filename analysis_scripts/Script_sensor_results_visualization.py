@@ -144,42 +144,42 @@ def visualize_sensors_MEG_topo( info1, value, vmin, vmax, figname, figsize,
 #=======================================================================================
 if __name__ == "__main__":
     
-    data_root_dir0 = "/media/yy/LinuxData/yy_Scene_MEG_data/"
-    data_root_dir =data_root_dir0 +"MEG_preprocessed_data/MEG_preprocessed_data/"
+    MEG_DATA_DIR = "/Users/yingyang/Downloads/Scene_MEG_data/"
+    REGRESSOR_DIR = "/Users/yingyang/Downloads/essential_regressor/"
+    MAT_OUT_DIR = "/Users/yingyang/Downloads/result/"
+        
+    FIG_OUT_DIR = "/Users/yingyang/Downloads/result/"
 
 
-    meg_dir = data_root_dir+"/epoch_raw_data/"
-    # to be modified
-    eeg_dir = "/home/ying/dropbox_unsync/MEG_scene_neil/MEG_EEG_DATA/EEG_DATA/DATA/epoch_raw_data/"
-    MEGorEEG = ['EEG','MEG']
+    
     # try unsmoothed
     #fname_suffix = "1_110Hz_notch_ica_ave_alpha15.0_no_aspect"
     
     flag_swap_PPO10_POO10 = True
     MEG_fname_suffix = "1_110Hz_notch_ica_ave_alpha15.0_no_aspect"
-    EEG_fname_suffix = "1_110Hz_notch_ica_PPO10POO10_swapped_ave_alpha15.0_no_aspect" \
-        if flag_swap_PPO10_POO10 else "1_110Hz_notch_ica_ave_alpha15.0_no_aspect"    
-    
     
     model_name = "AlexNet"
-    
-    regressor_dir = data_root_dir0 + "/regressor/"
-    #regressor_dir = "/home/ying/dropbox_unsync/MEG_scene_neil/MEG_EEG_DATA/Result_MAT/sensor_regression/regressor/"
-    fig_outdir = data_root_dir0 + "Result_Mat/figs/sensor_reg/MEEG_no_aspect/"
- 
-    
-    fname = "/media/yy/LinuxData/yy_Scene_MEG_data/MEG_preprocessed_data/MEG_preprocessed_data/epoch_raw_data/Subj1/Subj1_run1_filter_1_110Hz_notch_ica_smoothed-epo.fif.gz"
-    tmp_epoch = mne.read_epochs(fname)
-    info1 = tmp_epoch.info
+
+
+    #fname = "/media/yy/LinuxData/yy_Scene_MEG_data/MEG_preprocessed_data/MEG_preprocessed_data/epoch_raw_data/Subj1/Subj1_run1_filter_1_110Hz_notch_ica_smoothed-epo.fif.gz"
+    fname = "/Users/yingyang/mne_data/MNE-sample-data/MEG/sample/sample_audvis-ave.fif"
+    tmp_epoch = mne.read_evokeds(fname)
+    info1 = tmp_epoch[0].info
     del(tmp_epoch)
+    
+    info1['ch_names'] = info1['ch_names'][0:306]
+    info1['chs'] = info1['chs'][0:306]
+    info1['bads'] = []
+    info1['nchan'] = 306
+    info1['sfreq'] = 100.0
+    
 
     
-    sep_CCA = True
     Flag_CCA = True
     Flag_PCA = True
     
     Flag_additional = False
-    Flag_cv = True
+    Flag_cv = False
     #"AlexNet_MEG_CCA1_ncomp6_ave_cv_1_110Hz_notch_ica_ave_alpha15.0_no_aspect"
     
     #for isMEG in [0,1]:
@@ -200,8 +200,7 @@ if __name__ == "__main__":
         offset = 0.04 if isMEG else 0.02
         # if not Flag_PCA, the ridge regression
         #========= the first 10 dimension
-        mat_out_dir = data_root_dir0 + "Result_Mat/sensor_regression/ave_ols/"
-            
+             
         if Flag_PCA:
            
             if not Flag_CCA:
@@ -211,17 +210,17 @@ if __name__ == "__main__":
                 n_comp = 10
             else:
                 n_comp = 6
-                feature_suffix = "CCA1" 
+                feature_suffix = "CCA" 
             
-            fname_suffix = MEG_fname_suffix if isMEG else EEG_fname_suffix
+            fname_suffix = MEG_fname_suffix 
             if Flag_cv:
-                mat_name = mat_out_dir + "AlexNet_%s_%s_ncomp%d_ave_cv_%s.mat" \
-                    %(MEGorEEG[isMEG], feature_suffix, n_comp, fname_suffix)
+                mat_name = MAT_OUT_DIR + "AlexNet_%s_%s_ncomp%d_ave_cv_%s.mat" \
+                    %("MEG", feature_suffix, n_comp, fname_suffix)
                 mat_dict = scipy.io.loadmat(mat_name)
                 Rsq, times = 1.0-mat_dict['relative_error'], mat_dict['times'][0]
             else:
-                mat_name = mat_out_dir + "AlexNet_%s_%s_ncomp%d_ave_%s.mat" \
-                    %(MEGorEEG[isMEG], feature_suffix, n_comp, fname_suffix)
+                mat_name = MAT_OUT_DIR + "AlexNet_%s_%s_ncomp%d_ave_%s.mat" \
+                    %("MEG", feature_suffix, n_comp, fname_suffix)
                 mat_dict = scipy.io.loadmat(mat_name)
                 Rsq, times = mat_dict['Rsq'], mat_dict['times'][0]
             
@@ -236,44 +235,10 @@ if __name__ == "__main__":
             times1 = (times-offset)
             times_ms =times1*1000.0
             vmin = -0.05 if Flag_cv else  0
-            vmax_list = [0.08] if Flag_cv else [0.15]
+            vmax_list = [0.08] if Flag_cv else [0.08]
             time_array = np.arange(0.05,0.75,0.05)
             
-        else:
-            pass
-            '''
-            feature_suffix  = "ridgereg_ndim100"
-            feat_name_seq = ['conv1','fc6','local_contrast']
-            n_feat = len(feat_name_seq)
-            n_times =55
-            Rsq = np.zeros([n_Subj, n_feat, n_channels, n_times])
-            for j in range(n_feat):
-                for i in range(n_Subj):
-                    subj = "Subj%d" %(Subj_list[i])
-                    mat_dict = scipy.io.loadmat(mat_out_dir + "%s_isMEG%d_%s_%s.mat"
-                              %(subj, isMEG, feat_name_seq[j], feature_suffix))
-                    Rsq[i,j] = 1.0- mat_dict['error_ratio_kfolds'].mean(axis = 0)[:,0:n_times]
-            
-            times1 = (np.arange(-0.09,1.0, 0.02) -offset)
-            times_ms = times1*1000.0
-            vmin = -0.3
-            vmax_list = [0.1]
-            time_array = np.arange(0.05,0.75,0.05)
-            '''
-            '''
-            if Flag_additional:
-                # Subj_additional_1 had some problem
-                tmp = Rsq[1::].mean(axis = 0)
-                plt.figure()
-                for ll in range(n_feat):
-                    plt.subplot(1,n_feat, ll+1)
-                    plt.imshow(tmp[ll], vmin = 0, vmax = 0.1, interpolation = "none", aspect = "auto",
-                               extent = [times[0],times[-1], 1, 128], origin = "lower")
-                    plt.colorbar()
-                    plt.title(feat_name_seq[ll])
-                    
-                plt.tight_layout()
-            '''
+
                 
     
         data_to_plot = [Rsq]
@@ -322,8 +287,8 @@ if __name__ == "__main__":
                             plt.xlabel('time (ms)');
                             plt.ylabel('channel id')
                     plt.tight_layout()
-                    #plt.savefig(fig_outdir + "AlexNet_%s_CCA%d_ncomp%d_%s_T_diff.pdf" %(MEGorEEG[isMEG], sep_CCA, n_comp, data_name[ll]))
-                    #plt.savefig(fig_outdir + "AlexNet_%s_CCA%d_ncomp%d_%s_T_diff.eps" %(MEGorEEG[isMEG], sep_CCA, n_comp, data_name[ll]))
+                    #plt.savefig(fig_outdir + "AlexNet_%s_CCA_ncomp%d_%s_T_diff.pdf" %(MEGorEEG[isMEG], n_comp, data_name[ll]))
+                    #plt.savefig(fig_outdir + "AlexNet_%s_CCA_ncomp%d_%s_T_diff.eps" %(MEGorEEG[isMEG], n_comp, data_name[ll]))
         """    
             
         cmap = plt.get_cmap('plasma') 
@@ -334,22 +299,26 @@ if __name__ == "__main__":
                 tmp = data_to_plot[ll][:,j,:,:].mean(axis = 0)
                 if Flag_PCA:
                     if Flag_additional:
-                        figname = fig_outdir + "%s_sensor_topo_%s_%s_ncomp%d_%s_%s_additional%d.pdf"  %(MEGorEEG[isMEG], feat_name_seq[j], 
+                        figname = FIG_OUT_DIR + "%s_sensor_topo_%s_%s_ncomp%d_%s_%s_additional%d.pdf"  %(MEGorEEG[isMEG], feat_name_seq[j], 
                                             data_name[ll], n_comp, feature_suffix, fname_suffix, Flag_additional)
                     else:
-                        figname = fig_outdir + "%s_sensor_topo_%s_%s_ncomp%d_%s_%s_cv%d.pdf"  %(MEGorEEG[isMEG], feat_name_seq[j], 
+                        figname = FIG_OUT_DIR + "%s_sensor_topo_%s_%s_ncomp%d_%s_%s_cv%d.pdf"  %(MEGorEEG[isMEG], feat_name_seq[j], 
                                             data_name[ll], n_comp, feature_suffix, fname_suffix, Flag_cv)
                         
                 else:
                     if Flag_additional:
-                        figname = fig_outdir + "%s_sensor_topo_%s_%s_%s_%s_additional%d.pdf"  %(MEGorEEG[isMEG], feat_name_seq[j], 
+                        figname = FIG_OUT_DIR + "%s_sensor_topo_%s_%s_%s_%s_additional%d.pdf"  %(MEGorEEG[isMEG], feat_name_seq[j], 
                                             data_name[ll], feature_suffix, fname_suffix, Flag_additional )
                     else:
-                        figname = fig_outdir + "%s_sensor_topo_%s_%s_%s_%s_cv%d.pdf"  %(MEGorEEG[isMEG], feat_name_seq[j], 
+                        figname = FIG_OUT_DIR + "%s_sensor_topo_%s_%s_%s_%s_cv%d.pdf"  %(MEGorEEG[isMEG], feat_name_seq[j], 
                                             data_name[ll], feature_suffix, fname_suffix, Flag_cv)
                 #visualize_sensors( tmp, vmin, vmax_list[ll], figname, cmap, figsize, isMEG, times1, time_array)
                 if isMEG:
-                    visualize_sensors_MEG_topo( info1, tmp*100, vmin*100, vmax_list[ll]*100, figname, figsize, 
+                    if feat_name1[j] != 'local contrast':
+                        vmax = vmax_list[ll]*100 
+                    else:
+                        vmax = 14.0
+                    visualize_sensors_MEG_topo( info1, tmp*100, vmin*100, vmax , figname, figsize, 
                       times1, time_array, title = feat_name1[j], ylim = [vmin*100, vmax_list[ll]*100])
                 #plt.close('all')
         '''
@@ -433,7 +402,7 @@ if __name__ == "__main__":
                 val_time_selected_no_baseline = (tmp_val_mean.T - baseline_mean).T
                 Tobs, clusters, p_val_clusters, H0 = mne.stats.permutation_cluster_1samp_test(
                 val_time_selected_no_baseline, threshold,tail = 1)
-                print clusters, p_val_clusters
+                print (clusters, p_val_clusters)
                 tmp_window = list()
                 for i_c, c in enumerate(clusters):
                     c = c[0]

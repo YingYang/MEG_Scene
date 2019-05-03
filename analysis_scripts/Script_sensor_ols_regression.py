@@ -68,7 +68,7 @@ if __name__ == "__main__":
     MEG_fname_suffix = "1_110Hz_notch_ica_ave_alpha15.0_no_aspect"
     model_name = "AlexNet"
        
-    Flag_CCA = False
+    Flag_CCA = True
     
     #for isMEG in [0, 1]:
     for isMEG in [1]:
@@ -121,26 +121,7 @@ if __name__ == "__main__":
                 X_list.append(X)
                 
             n_comp = n_dim
-            """    
-            for j in range(len(X_list)):
-                X = X_list[j]
-                feat_name = feat_name_seq[j]
-                print feat_name
-                for i in range(n_Subj):
-                    t0 = time.time()
-                    subj = "Subj%d" %Subj_list[i]
-                    if isMEG:
-                        ave_mat_path = meg_dir + "%s/%s_%s.mat" %(subj,subj,fname_suffix)
-                    else:
-                        ave_mat_path = eeg_dir + "%s_EEG/%s_EEG_%s.mat" %(subj,subj,fname_suffix)
-                    
-                    result_reg = sensor_space_regression_no_regularization(subj, ave_mat_path, X)
-                    mat_name = mat_file_out_dir + "%s_%s_result_reg_%s_%s.mat"  %(subj, MEGorEEG[isMEG],
-                                                                                  feat_name, suffix)                
-                    print n_dim
-                    result_reg['n_dim'] = n_dim
-                    scipy.io.savemat(mat_name, result_reg)  
-             """
+           
         else: 
             
             n_comp1 = 6
@@ -193,7 +174,7 @@ if __name__ == "__main__":
          
         # save the results as mat
         if Flag_CCA:
-            mat_name = MAT_OUT_DIR + "AlexNet_%s_CCA%d_ncomp%d_ave_%s.mat" %(MEGorEEG[isMEG], sep_CCA, n_comp, fname_suffix)
+            mat_name = MAT_OUT_DIR + "AlexNet_%s_CCA_ncomp%d_ave_%s.mat" %(MEGorEEG[isMEG],  n_comp, fname_suffix)
         else:
             mat_name = MAT_OUT_DIR + "AlexNet_%s_%s_ncomp%d_ave_%s.mat" %(MEGorEEG[isMEG], feature_suffix, n_comp, fname_suffix)
         
