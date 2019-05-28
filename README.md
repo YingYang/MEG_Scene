@@ -31,7 +31,7 @@ The dataset in this Figure share link also contains the following:
 - `ROI_labels.zip` that includes `Subj*.zip`, in which the `labels` folder contains ROI `*.label` files 
   that marked the source points in the regions of interest. 
 - `fwd.zip` contains the forward solutions for each participants that can project the sensor space data to source space. 
+- `MEG_NEIL_Image_SUN_hierarchy_manual_20160617.csv` include the scene categories of the 362 images and some manual annotation about their semantic categories. 
 
 
-
-Please download the features from the following dropbox link. 
+Please download the features from the following dropbox link (TBA). 
