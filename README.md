@@ -9,7 +9,8 @@ TBA
 
 ## Dataset
 
-The preprocessed MEG data from 18 participants are available at Figshare. 
+The preprocessed MEG data from 18 participants are available at Figshare (https:
+528 //figshare.com/articles/MEG_scene_data/7991615. 
 These data have the following file names and contents. 
 - `Subj*_1_110Hz_notch_ica_all_trials.mat`, which contains all trials (including repetitions of the images). 
 - `Subj*_1_110Hz_notch_ica_ave_alpha15.0.mat`, which contains the averaged neural responses to each stimulus image. 
