@@ -3,8 +3,6 @@ code for preprocessing and analysis for the paper "Exploring spatio-temporal neu
 (accepted by Human Brain Mapping DOI to be added,
 preprint available at https://www.biorxiv.org/content/biorxiv/early/2018/09/20/422576.full.pdf)
 
-## Code
-TBA
 
 
 ## Dataset
@@ -35,4 +33,4 @@ The dataset in this Figure share link also contains the following:
 - `MEG_NEIL_Image_SUN_hierarchy_manual_20160617.csv` include the scene categories of the 362 images and some manual annotation about their semantic categories. 
 
 
-Please download the features from the following dropbox link (TBA). 
+Please download the features from the following dropbox link https://www.dropbox.com/sh/ma2pwawh8p73cmc/AAD53PuK3zlYlkOGdN_2JvLZa?dl=0. 
